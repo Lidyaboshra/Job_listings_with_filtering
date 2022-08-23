@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+@media (min-width: 768px) {
+  .container,
+  .search {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container,
+  .search {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container,
+  .search {
+    width: 1170px;
+  }
+}
+.space {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+.search {
+  padding: 0 34px;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.click {
+  padding: 10px;
+  width: 100%;
+  border: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.filter div {
+  width: fit-content;
+  background-color: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+  padding: 10px;
+}
+.filter span {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: hsl(180, 29%, 50%);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.filter span:hover {
+  background: hsl(180, 14%, 20%);
+}
+.clear {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  cursor: pointer;
+  color: hsl(180, 8%, 52%);
+}
+
+.all {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  width: inherit;
+  height: 100px;
+}
+img[src="images/bg-header-desktop.svg"] {
+  width: inherit;
+  height: 100px;
+  background-color: hsl(180, 8%, 52%);
+}
+.body {
+  background-color: hsl(180, 52%, 96%);
+  width: 100%;
+  min-height: calc(100vh - 100px);
+}
+.container {
+  padding: 0 15px;
+  margin: 50px auto;
+}
+
+.box {
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+.photo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.personal {
+  width: 70px;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info {
+  height: 100%;
+  margin: 13px;
+  padding: 0 28px;
+}
+.company {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.company h3 {
+  color: hsl(180, 29%, 50%);
+  padding: 2px;
+  font-size: 17px;
+}
+span {
+  display: block;
+}
+.new,
+.featured {
+  color: white;
+  background-color: hsl(180, 29%, 50%);
+  padding: 4px 10px;
+  border-radius: 31px;
+  font-size: 15px;
+}
+.featured {
+  background-color: hsl(180, 14%, 20%);
+}
+.position h3 {
+  padding: 6px;
+  margin: 5px 0;
+  color: hsl(180, 14%, 20%);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.position h3:hover {
+  color: hsl(180, 29%, 50%);
+}
+.day {
+  display: flex;
+}
+.day span {
+  color: hsl(180, 8%, 52%);
+  padding: 6px;
+}
+.skills {
+  display: flex;
+  gap: 15px;
+  margin: 0 36px;
+  flex-wrap: wrap;
+}
+.skills div {
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.skills div:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
+.top {
+  border-left: 5px solid hsl(180, 29%, 50%);
+  border-radius: 6px;
+}
+
+@media (max-width: 992px) {
+  .skills {
+    margin: 0 61px;
+  }
+}
+
+@media (max-width: 522px) {
+  .photo {
+    padding-left: 0;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 54px;
+  }
+  .personal {
+    position: absolute;
+    top: -34px;
+    left: 33px;
+  }
+  .info {
+    padding: 0;
+    margin-top: 50px;
+  }
+  .skills {
+    margin: 0 6px;
+    padding: 15px 2px;
+  }
+  .day span {
+    font-size: 14px;
+    padding: 2px;
+  }
+  .click {
+    gap: 10px;
+  }
+  .clear {
+    padding: 0;
+  }
+}
