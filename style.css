@@ -118,6 +118,7 @@ img[src="images/bg-header-desktop.svg"] {
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  height: 140px;
 }
 .photo {
   height: 100%;
@@ -217,9 +218,19 @@ span {
   border-radius: 6px;
 }
 
+@media (max-width: 1024px) {
+  .skills {
+    margin: 0 88px 10px;
+  }
+}
+
 @media (max-width: 992px) {
   .skills {
     margin: 0 61px;
+    margin-bottom: 10px;
+  }
+  .box {
+    height: fit-content;
   }
 }
 

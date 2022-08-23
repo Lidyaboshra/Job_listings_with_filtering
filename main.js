@@ -19,6 +19,7 @@ getRequest.onreadystatechange = function () {
       let createImagePersonal = document.createElement("img");
       createImagePersonal.className = "personal";
       createImagePersonal.src = mainData[i].logo;
+      createImagePersonal.alt = mainData[i].id;
       createDivPhoto.append(createImagePersonal);
 
       let createDivCenter = document.createElement("div");
